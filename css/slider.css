@@ -1,9 +1,38 @@
+.slider .item img {
+    height: 60px;
+}
+
+.item {
+    margin: 0 40px;
+    display: flex;
+    align-items: center;
+}
+
+.slider-text {
+    font-size: 35px;
+    font-weight: bold;
+    margin-left: 5px;
+    transition: 2s;
+}
+
+.slider-dark {
+    color: var(--darkPrimaryColor);
+    transition: 2s;
+}
+
+.list {
+    display: flex; 
+    animation: 10s slide infinite linear;
+}
+
 .slider {
-    width: 100%;
-    /* border: 1px solid var(--lightPrimaryColor); */
-    height: var(--height);
-    cursor: pointer;
+    position: relative;
     overflow: hidden;
+    padding: 30px 0;
+
+    white-space: nowrap;
+    display: flex;
+    cursor: pointer;
     mask-image: linear-gradient(
         to right,
         transparent,
@@ -13,48 +42,19 @@
 }
 
 
-.slider .list {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    min-width: calc(var(--width) * var(--quantity));
-    position: relative;
+
+.slider:hover .list {
+    animation-play-state: paused;
 }
 
-.slider .list .item {
-    display: flex;
-    align-items: center; 
-    width: var(--width);
-    height: var(--height);
-    position: absolute;
-    left: 100%; 
-    animation: autoRun 10s linear infinite;
-    animation-delay: calc((10s / var(--quantity)) * (var(--position) - 1));
-}
-
-.slider .list .item img {
-    width: 3rem;
-    margin-right: 5px;
-}
-
-.slider-text {
-    font-size: 35px;
-    font-weight: bold;
-}
-
-@keyframes autoRun {
-    from {
-        left: 100%;
-    } to {
-        left: calc(var(--width) * -1);
-    }
-}
-
-.slider:hover .item {
-    animation-play-state: paused!important;
-}
-
-.slider .item:hover {
+.item:hover {
     color: #fff;
 }
 
+@keyframes slide {
+    from {
+        transform: translateX(0%);
+    } to {
+        transform: translateX(-100%);
+    }
+}

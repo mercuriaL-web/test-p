@@ -1,0 +1,49 @@
+.desk {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: .2rem;
+}
+
+.desk__first-column {
+    width: 100%;
+    height: 100%;
+}
+.desk__second-column {
+    width: 100%;
+    height: 100%;
+}
+.desk__third-column {
+    width: 100%;
+    height: 100%;
+}
+
+.desk__project {
+    margin-bottom: .2rem;
+    padding: .4rem;
+}
+
+.desk__project_img {
+    width: 100%;
+}
+
+.desk__project_name {
+    font-family: input-mono,ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New;
+    color: var(--lightPrimaryColor);
+    font-size: .9rem;
+    text-transform: uppercase;
+    letter-spacing: .08em;
+}
+
+.dark_text {
+    color: var(--darkPrimaryColor);
+    transition: 2s;
+}
+
+
+.desk__project_text {
+    font-family: input-mono,ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New;
+    color: gray;
+    font-size: .9rem;
+    text-transform: uppercase;
+    letter-spacing: .08em;
+}

@@ -30,7 +30,6 @@
       transparent 0 60px,
       var(--lightSecondaryColor) 60px 61px
     );
-  transition: 2s;
   mask-image: linear-gradient(
         to right,
         transparent,
@@ -38,6 +37,7 @@
         transparent
     );
   min-height: 200vh;
+  transition: 2s;
 }
 
 
@@ -55,7 +55,7 @@
 
 .dark-text {
   color: var(--darkPrimaryColor);
-  transition: color 1s;
+  transition: color 2s;
 }
 
 .dark-bg {
@@ -65,16 +65,17 @@
 
 .dark-logo {
   font-weight: bold;
-  font-size: 50px;
+  font-size: 2rem;
   border: 3px var(--darkPrimaryColor) solid;
   cursor: pointer;
+  transition: 2.8s;
 }
 
 .dark-logo__left-part {
   background-color: transparent;
   color: var(--darkPrimaryColor);
   padding-left: 15px;
-  transition: 1s;
+  transition: 2s;
 }
 
 .dark-logo:hover .dark-logo__left-part {
@@ -85,9 +86,9 @@
 .dark-logo__mid-part {
   background-color: var(--darkPrimaryColor);
   color: var(--darkBackgroundColor);
-  margin-left: -10px;
+  margin-left: -7px;
   padding-left: 5px;
-  transition: 0.8s;
+  transition: 1.8s;
 }
 
 .dark-logo:hover .dark-logo__mid-part {
@@ -99,8 +100,8 @@
   background-color: var(--darkPrimaryColor);
   color: var(--darkBackgroundColor);
   padding-right: 15px;
-  margin-left: -11px;
-  transition: 0.8s;
+  margin-left: -7px;
+  transition: 1.8s;
 }
 
 .dark-logo:hover .dark-logo__right-part {
@@ -117,13 +118,13 @@
   position: sticky;
   top: 0;
   color: #464d7c;
-  transition: 1s;
+  transition: 2s;
   z-index: 1;
 }
 
 .logo {
   font-weight: bold;
-  font-size: 50px;
+  font-size: 2rem;
   border: 3px var(--lightPrimaryColor) solid;
   cursor: pointer;
 }
@@ -132,7 +133,7 @@
   background-color: transparent;
   color: var(--lightPrimaryColor);
   padding-left: 15px;
-  transition: 1s;
+  transition: 2s;
 }
 
 .logo:hover .logo__left-part {
@@ -143,9 +144,9 @@
 .logo__mid-part {
   background-color: var(--lightPrimaryColor);
   color: var(--lightBackgroundColor);
-  margin-left: -10px;
+  margin-left: -7px;
   padding-left: 5px;
-  transition: 0.8s;
+  transition: 1.8s;
 }
 
 .logo:hover .logo__mid-part {
@@ -157,8 +158,8 @@
   background-color: var(--lightPrimaryColor);
   color: var(--lightBackgroundColor);
   padding-right: 15px;
-  margin-left: -11px;
-  transition: 0.8s;
+  margin-left: -7px;
+  transition: 1.8s;
 }
 
 .logo:hover .logo__right-part {
@@ -177,7 +178,7 @@
 }
 
 .nav__item {
-  font-size: 3rem;
+  font-size: 2rem;
   font-weight: bold;
   cursor: pointer;
   transition: 0.4s;
@@ -201,12 +202,12 @@
     transparent 0 60px,
     var(--darkSecondaryColor) 60px 61px
   );
-  transition: 2s;
   mask-image: linear-gradient(
         to right,
         transparent,
         #000 10% 90%,
         transparent
   );
+  transition: 2s;
   min-height: 200vh;
 }
