@@ -1,0 +1,212 @@
+@import url("https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Afacad Flux", sans-serif;
+  scrollbar-width: none;
+}
+
+:root {
+  --lightPrimaryColor: #25283b;
+  --lightSecondaryColor: #c8c8ca;
+  --lightBackgroundColor: #d2d2d2;
+
+  --darkPrimaryColor: #e7e047;
+  --darkSecondaryColor: #362f1e;
+  --darkBackgroundColor: #111111;
+}
+
+.main {
+  background-color: #d2d2d2;
+  background-image: repeating-linear-gradient(
+      to right,
+      transparent 0 60px,
+      var(--lightSecondaryColor) 60px 61px
+    ),
+    repeating-linear-gradient(
+      to bottom,
+      transparent 0 60px,
+      var(--lightSecondaryColor) 60px 61px
+    );
+  transition: 2s;
+  mask-image: linear-gradient(
+        to right,
+        transparent,
+        #000 10% 90%,
+        transparent
+    );
+  min-height: 200vh;
+}
+
+
+.container {
+  max-width: 80%;
+  margin: 0 auto;
+  padding: 10px 30px;
+}
+
+.container_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dark-text {
+  color: var(--darkPrimaryColor);
+  transition: color 1s;
+}
+
+.dark-bg {
+  background: var(--darkBackgroundColor);
+  border-bottom: 2px var(--darkPrimaryColor) solid;
+}
+
+.dark-logo {
+  font-weight: bold;
+  font-size: 50px;
+  border: 3px var(--darkPrimaryColor) solid;
+  cursor: pointer;
+}
+
+.dark-logo__left-part {
+  background-color: transparent;
+  color: var(--darkPrimaryColor);
+  padding-left: 15px;
+  transition: 1s;
+}
+
+.dark-logo:hover .dark-logo__left-part {
+  background-color: var(--darkPrimaryColor);
+  color: var(--darkBackgroundColor);
+}
+
+.dark-logo__mid-part {
+  background-color: var(--darkPrimaryColor);
+  color: var(--darkBackgroundColor);
+  margin-left: -10px;
+  padding-left: 5px;
+  transition: 0.8s;
+}
+
+.dark-logo:hover .dark-logo__mid-part {
+  background-color: transparent;
+  color: var(--darkPrimaryColor);
+}
+
+.dark-logo__right-part {
+  background-color: var(--darkPrimaryColor);
+  color: var(--darkBackgroundColor);
+  padding-right: 15px;
+  margin-left: -11px;
+  transition: 0.8s;
+}
+
+.dark-logo:hover .dark-logo__right-part {
+  background-color: transparent;
+  color: var(--darkPrimaryColor);
+}
+
+.light-bg {
+  background-color: var(--lightBackgroundColor);
+  border-bottom: 2px var(--lightPrimaryColor) solid;
+}
+
+.header {
+  position: sticky;
+  top: 0;
+  color: #464d7c;
+  transition: 1s;
+  z-index: 1;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 50px;
+  border: 3px var(--lightPrimaryColor) solid;
+  cursor: pointer;
+}
+
+.logo__left-part {
+  background-color: transparent;
+  color: var(--lightPrimaryColor);
+  padding-left: 15px;
+  transition: 1s;
+}
+
+.logo:hover .logo__left-part {
+  background-color: var(--lightPrimaryColor);
+  color: var(--lightBackgroundColor);
+}
+
+.logo__mid-part {
+  background-color: var(--lightPrimaryColor);
+  color: var(--lightBackgroundColor);
+  margin-left: -10px;
+  padding-left: 5px;
+  transition: 0.8s;
+}
+
+.logo:hover .logo__mid-part {
+  background-color: transparent;
+  color: var(--lightPrimaryColor);
+}
+
+.logo__right-part {
+  background-color: var(--lightPrimaryColor);
+  color: var(--lightBackgroundColor);
+  padding-right: 15px;
+  margin-left: -11px;
+  transition: 0.8s;
+}
+
+.logo:hover .logo__right-part {
+  background-color: transparent;
+  color: var(--lightPrimaryColor);
+}
+
+.nav {
+  width: 50%;
+}
+
+.nav__list {
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+}
+
+.nav__item {
+  font-size: 3rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.nav__item:hover {
+  color: white;
+  transform: translateY(-7px);
+}
+
+
+.dark-mode {
+  background-color: var(--darkBackgroundColor);
+  background-image: repeating-linear-gradient(
+    to right,
+    transparent 0 60px,
+    var(--darkSecondaryColor) 60px 61px
+  ),
+  repeating-linear-gradient(
+    to bottom,
+    transparent 0 60px,
+    var(--darkSecondaryColor) 60px 61px
+  );
+  transition: 2s;
+  mask-image: linear-gradient(
+        to right,
+        transparent,
+        #000 10% 90%,
+        transparent
+  );
+  min-height: 200vh;
+}
