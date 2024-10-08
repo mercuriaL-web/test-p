@@ -1,3 +1,15 @@
+window.addEventListener('load', function() {
+  const loadingScreen = document.getElementById('loading-screen');
+  const deskProject = document.querySelectorAll('.desk__project');
+  const logo = document.querySelector('.logo');
+  const navList = document.querySelector('.nav__list');
+  loadingScreen.classList.add('loaded');
+  deskProject.forEach((elem) => elem.classList.add('loaded'));
+  setTimeout(() => logo.style.transform = 'translateY(0%)', 1000);
+  setTimeout(() => navList.style.transform = 'translateY(0%)', 1000);
+
+});
+
 window.addEventListener('scroll', function() {
   const scrollY = window.scrollY;
   const header = document.querySelector('.header');

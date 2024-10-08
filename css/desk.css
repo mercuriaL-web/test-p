@@ -20,10 +20,18 @@
 .desk__project {
     margin-bottom: .2rem;
     padding: .4rem;
+    cursor: pointer;
+    transition: 2s;
+    transform: translateY(300%);
+    overflow: hidden;
 }
 
 .desk__project_img {
     width: 100%;
+}
+
+.desk__project_img:hover {
+    filter:brightness(.8);
 }
 
 .desk__project_name {

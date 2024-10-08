@@ -68,7 +68,7 @@
   font-size: 2rem;
   border: 3px var(--darkPrimaryColor) solid;
   cursor: pointer;
-  transition: 2.8s;
+  transition: 1.8s;
 }
 
 .dark-logo__left-part {
@@ -110,14 +110,14 @@
 }
 
 .light-bg {
-  background-color: var(--lightBackgroundColor);
-  border-bottom: 2px var(--lightPrimaryColor) solid;
+  background-color: var(--lightPrimaryColor);
+  border-bottom: 2px var(--lightBackgroundColor) solid;
 }
 
 .header {
   position: sticky;
   top: 0;
-  color: #464d7c;
+  color: var(--lightSecondaryColor);
   transition: 2s;
   z-index: 1;
 }
@@ -125,38 +125,40 @@
 .logo {
   font-weight: bold;
   font-size: 2rem;
-  border: 3px var(--lightPrimaryColor) solid;
+  border: 3px var(--lightSecondaryColor) solid;
   cursor: pointer;
+  transition: 1.8s;
+  transform: translateY(-100%);
 }
 
 .logo__left-part {
   background-color: transparent;
-  color: var(--lightPrimaryColor);
+  color: var(--lightSecondaryColor);
   padding-left: 15px;
   transition: 2s;
 }
 
 .logo:hover .logo__left-part {
-  background-color: var(--lightPrimaryColor);
-  color: var(--lightBackgroundColor);
+  background-color: var(--lightSecondaryColor);
+  color: var(--lightPrimaryColor);
 }
 
 .logo__mid-part {
-  background-color: var(--lightPrimaryColor);
-  color: var(--lightBackgroundColor);
+  background-color: var(--lightSecondaryColor);
+  color: var(--lightPrimaryColor);
   margin-left: -7px;
-  padding-left: 5px;
+  padding-left: 3px;
   transition: 1.8s;
 }
 
 .logo:hover .logo__mid-part {
   background-color: transparent;
-  color: var(--lightPrimaryColor);
+  color: var(--lightSecondaryColor);
 }
 
 .logo__right-part {
-  background-color: var(--lightPrimaryColor);
-  color: var(--lightBackgroundColor);
+  background-color: var(--lightSecondaryColor);
+  color: var(--lightPrimaryColor);
   padding-right: 15px;
   margin-left: -7px;
   transition: 1.8s;
@@ -164,7 +166,7 @@
 
 .logo:hover .logo__right-part {
   background-color: transparent;
-  color: var(--lightPrimaryColor);
+  color: var(--lightSecondaryColor);
 }
 
 .nav {
@@ -175,6 +177,8 @@
   display: flex;
   justify-content: space-evenly;
   list-style: none;
+  transition: 1.8s;
+  transform: translateY(-100%);
 }
 
 .nav__item {
@@ -186,7 +190,7 @@
 
 .nav__item:hover {
   color: white;
-  transform: translateY(-7px);
+  transform: translateY(-2px);
 }
 
 
@@ -211,3 +215,4 @@
   transition: 2s;
   min-height: 200vh;
 }
+
