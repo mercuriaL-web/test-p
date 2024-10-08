@@ -5,8 +5,8 @@ window.addEventListener('load', function() {
   const navList = document.querySelector('.nav__list');
   loadingScreen.classList.add('loaded');
   deskProject.forEach((elem) => elem.classList.add('loaded'));
-  setTimeout(() => logo.style.transform = 'translateY(0%)', 1000);
-  setTimeout(() => navList.style.transform = 'translateY(0%)', 1000);
+  setTimeout(() => logo.style.transform = 'translateY(0%)', 800);
+  setTimeout(() => navList.style.transform = 'translateY(0%)', 800);
 
 });
 
